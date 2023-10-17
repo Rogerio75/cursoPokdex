@@ -1,9 +1,15 @@
+<ng-template ngFor let-pokemon [ngForOf]="getAllPokemon">
 <a class="pokemon" >
   <section class="pokemon_status" >
-    <h2>Bulbs</h2>
+    <h2>
+     {{pokemon.name}}
+
+    </h2>
     <ul>
-      <li>Tipo1 vcvc</li>
-      <li>tipo 2 fadsf</li>
+      <li *ngFor="let value of pokemon.types">
+        {{pokemon.}}
+      </li>
+
     </ul>
   </section>
   <section class="pokemon_image" >
@@ -13,3 +19,4 @@
 
 </a>
 
+</ng-template>
