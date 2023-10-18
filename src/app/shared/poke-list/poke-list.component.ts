@@ -19,7 +19,7 @@ ngOnInit(): void {
    this.pokeApiService.apiListAllPokemons.subscribe(
     res => {
             this.getAllPokemon= res.results;
-            console.log(this.getAllPokemon);
+
     }
 
    );
