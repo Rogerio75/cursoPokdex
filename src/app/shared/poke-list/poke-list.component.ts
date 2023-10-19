@@ -24,5 +24,13 @@ ngOnInit(): void {
 
    );
 }
+ public getSearch(value:string){
+ const filter = this.getAllPokemon.filter(
+  (res: any) => {
+  return  !res.name.indexOf(value.toLowerCase ());
+  });
+
+this.getAllPokemon =filter;
+ }
 
 }

@@ -2,6 +2,7 @@
 
 $padding: rem-calc(20);
 :host{
+.listagem{
   display: flex;
   justify-content: space-between;
   flex-wrap:wrap;
@@ -13,10 +14,10 @@ $padding: rem-calc(20);
   width: calc(49% - 2.5rem) ;
   height:rem-calc(157 - 40) ;
   margin-bottom: rem-calc(10) ;
-  padding: rem-calc(20);
+  padding: $padding;
   border-radius: rem-calc(10);
   text-decoration: none;
-
+  color: var(--primary-color);
   &_status{
     h2{
       font-size: rem-calc(22);
@@ -69,4 +70,5 @@ img {
 }
 
 
+}
 }
